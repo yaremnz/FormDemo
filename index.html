@@ -1,0 +1,112 @@
+<style>
+    #login{
+        max-width: 30rem;
+    }
+    #register label,
+    #login label {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    #register label,
+    #login input {
+        padding: 1rem;
+    }
+    body {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+    }
+    .dialogs {
+        display: grid;
+        place-items: center;
+    }
+    .centered {
+        /* margin: auto;
+        margin-top: 30%; */
+        box-shadow: 1rem 1rem 3rem;
+        border: 1rem solid white
+    }
+    .highlighted {
+        background-color: aquamarine;
+    }
+    header, footer{
+        background-color: black;
+        color: white;
+        position: fixed;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    nav {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    header {
+        top: 0;
+    }
+    footer {
+        bottom: 0;
+    }
+
+</style>
+<body>
+    <header>
+        <img>
+        <nav>
+            <a>Home</a>
+            <a>shopping</a>
+            <a>cart></a>
+        </nav>
+    </header>
+    <div class="dialogs">
+    <form class="centered highlighted" action="index.html" method="post" id="login" class="login">
+        <fieldset>
+            <legend>
+                Log-in
+            </legend>
+            <label>
+                User Name:
+                <input name="username" class="username" id="login_username" type="text" placeholder="User Name">
+            </label>
+            <label>
+                Password:
+                <input name="password" class="password" id="password" type="password" placeholder="Password">
+            </label>
+            <input type="submit" value="Login">
+        </fieldset>
+    </form>
+
+    <form class="centered highlighted" action="index.html" method="post" id="login" class="login">
+        <fieldset>
+            <legend>
+                Register
+            </legend>
+            <label>
+                User Name:
+                <input name="username" class="username" id="username" type="text" placeholder="User Name">
+            </label>
+            <label>
+                Email:
+                <input name="email" class="email" id="email" type="text" placeholder="E-mail">
+            </label>
+            <label>
+                Password:
+                <input name="password" class="password" id="password" type="password" placeholder="Password">
+            </label>
+            
+            <label>
+                Confirm Password:
+                <input name="password2" class="password2" id="password2" type="password" placeholder="Password">
+            </label>
+            <input type="submit" value="Register">
+        </fieldset>
+    </form>
+</div>
+<footer>&</footer>
+</body>
